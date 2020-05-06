@@ -16,7 +16,7 @@ func main() {
 
 	conn, _ := rtmp.Dial("rtmp://localhost/app/publish")
 
-	demuxer := flv.NewDemuxer(file)Z
+	demuxer := flv.NewDemuxer(file)
 
 	streams, err := demuxer.Streams()
 
